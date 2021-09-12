@@ -100,7 +100,7 @@
 
 @media (min-width: 320px) {
   body {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
   }
   .nav {
     -webkit-box-pack: justify;
