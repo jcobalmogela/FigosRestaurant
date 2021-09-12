@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins', sans-serif;
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  
-  
 }
 
 .nav {
@@ -23,15 +30,13 @@
     height: 100px;
 }
 
-.nav-header {
+.nav-header ,.nav-user{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     transition: none;
     position: relative;
-
-
 }
 
 .nav-links {
@@ -39,7 +44,7 @@
     list-style: none;
     padding: 5px;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
+    font-family:$mainfont;
     letter-spacing: 1px;
 
 }
@@ -53,6 +58,7 @@
     align-items: center;
     padding: 5px;
     opacity: 0.9;
+    border-radius:5px;
 
 }
 
@@ -85,6 +91,70 @@
     background: white;
     border-radius: 30px;
 }
+.shop-icon{
+    width: 50px;
+    height: 50px;
+    border-radius:8px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-icon i {
+    font-size: 14pt;
+}
+.counterDiv{
+    width: 20px;
+    height: 20px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    right: 80%;
+    font-family: $mainfont;
+    font-size: 10px;
+}
+.btnSign{
+   padding: 5px;
+   width:100px;
+   height: 50px;
+   margin-left: 10px;
+   background: none;
+   border: none;
+   color: white;
+   font-size: 17px;
+   font-family: $mainfont;
+   border-radius: 8px;
+}
+.btnSign:nth-child(3){
+    background: $primaryColor;
+}
+.btnSign:nth-child(2){
+    background: $optionalColor;
+}
+.user-nav-mobile{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+   
+}
+.sign-user{
+    width: 50px;
+    font-size: 20px;
+    padding: 5px;
+    width: 100px;
+    color:white;
+    font-family:$mainfont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media (min-width:320px) {
     body{
@@ -115,6 +185,8 @@
         padding: 30px;
         text-align: center;
         transition: all ease-in-out 0.5s;
+        border-bottom:3px solid $primaryColor;
+        
     }
     .hide{
         opacity: 0;
@@ -125,6 +197,9 @@
         position: relative;
         top: 30%;
         font-size: 12pt;
+    }
+    .nav-user{
+        display: none;
     }
 
     .fadeIn {
@@ -153,7 +228,10 @@
 }
 
 @media(min-width:1100px) {
-    
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
     .nav {
         justify-content: space-evenly;
     }
@@ -168,7 +246,7 @@
         padding: 0px;
         justify-content: center;
         align-items: center;
-        transform: translateX(0);
+        border:none;
 
 
     }
@@ -181,7 +259,14 @@
         margin-top: 0;
         position: relative;
         top: 0;
-        font-size: 20px;
+        font-size: 17px;
+        margin-left: 50px;
+    }
+    .nav-user{
+        display: flex;
+    }
+    .user-nav-mobile{
+        display: none;
     }
     .hide{
         opacity: 1;
