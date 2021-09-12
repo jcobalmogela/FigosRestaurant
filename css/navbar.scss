@@ -13,6 +13,7 @@ $mainfont:'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  
 }
 
 .nav {
@@ -140,14 +141,18 @@ $mainfont:'Poppins', sans-serif;
     position: absolute;
     bottom: 0;
     display: flex;
-    width: 100%;
+    justify-content:space-evenly;
+    width: 150px;
+    padding: 5px;
+    
+ 
    
 }
 .sign-user{
     width: 50px;
     font-size: 20px;
     padding: 5px;
-    width: 100px;
+    width: 50px;
     color:white;
     font-family:$mainfont;
     display: flex;
