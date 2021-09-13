@@ -14,9 +14,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -163,37 +163,6 @@
   background: #4ac188;
 }
 
-.user-nav-mobile {
-  position: absolute;
-  bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 150px;
-  padding: 5px;
-}
-
-.sign-user {
-  width: 50px;
-  font-size: 20px;
-  padding: 5px;
-  width: 50px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media (min-width: 320px) {
   body {
     overflow-x: hidden;
@@ -235,6 +204,9 @@
   .nav-user {
     display: none;
   }
+  .nav-links:nth-child(5), .nav-links:nth-child(6) {
+    display: block;
+  }
   .fadeIn {
     -webkit-animation: fadeIn 0.5s ease-in-out;
             animation: fadeIn 0.5s ease-in-out;
@@ -274,6 +246,33 @@
     to {
       opacity: 0;
     }
+  }
+}
+
+@media (orientation: landscape) and (min-width: 568px) {
+  .nav {
+    height: 100px;
+  }
+  .nav-header {
+    height: 140vh;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav-links:nth-child(5), .nav-links:nth-child(6) {
+    display: none;
+  }
+  .nav-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 130px;
+    height: 100px;
   }
 }
 
@@ -320,11 +319,11 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .user-nav-mobile {
-    display: none;
-  }
   .hide {
     opacity: 1;
+  }
+  .nav-links:nth-child(5), .nav-links:nth-child(6) {
+    display: none;
   }
 }
 /*# sourceMappingURL=navbar.css.map */
