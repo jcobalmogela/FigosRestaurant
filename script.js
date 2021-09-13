@@ -1,7 +1,10 @@
 const menuIcon = document.querySelector('.menu');
 const menu = document.querySelector('.nav-header');
-const burgerMenu = document.querySelectorAll('.burger')
+const burgerMenu = document.querySelectorAll('.burger');
+const navLinks = document.querySelectorAll('.nav-links');
 
+
+// menu and burger menu toggler and animation
 menuIcon.addEventListener('click', () => {
    
     if(menu.classList.contains('hide')) {

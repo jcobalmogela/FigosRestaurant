@@ -13,7 +13,6 @@ $mainfont:'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  
 }
 
 .nav {
@@ -24,6 +23,8 @@ $mainfont:'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid $primaryColor;
+   
 }
 
 .logO {
@@ -48,6 +49,9 @@ $mainfont:'Poppins', sans-serif;
     font-family:$mainfont;
     letter-spacing: 1px;
 
+}
+.active-nav-links{
+    border-bottom:2px solid $primaryColor; 
 }
 
 .menu {
@@ -130,6 +134,7 @@ $mainfont:'Poppins', sans-serif;
     .nav {
         justify-content: space-between;
         padding: 20px;
+        border:1px solid $mainfont
     }
 
     .logo {
