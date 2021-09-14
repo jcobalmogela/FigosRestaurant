@@ -18,9 +18,9 @@ $mainfont:'Poppins', sans-serif;
     }
     .header-con{
     width: 100%;
-
     height: 300px;
     padding: 15px;
+
  
     }
     .header-con h1 {
@@ -42,13 +42,14 @@ $mainfont:'Poppins', sans-serif;
     .headerbtn-con{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 270.5px;
         position: relative;
     }
     .headerbtn-con p{
         color: $secondaryColor;
         font-family: $mainfont;
+ 
     }
     .headerbtn-con p::before{
         content: '';
@@ -69,6 +70,7 @@ $mainfont:'Poppins', sans-serif;
         color: white;
         font-family: $mainfont;
         letter-spacing: 0.5px;
+        margin-right: 15px;
     }
     .btnheader{
         margin-top: 15px;
