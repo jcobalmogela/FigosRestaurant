@@ -9,7 +9,6 @@
   }
   .header-con {
     width: 100%;
-    border: 1px solid red;
     height: 300px;
     padding: 15px;
   }
@@ -40,10 +39,19 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 270.5px;
+    position: relative;
   }
   .headerbtn-con p {
     color: #ffb902;
     font-family: "Poppins", sans-serif;
+  }
+  .headerbtn-con p::before {
+    content: '';
+    width: 70px;
+    background-color: #ffb902;
+    height: 2px;
+    position: absolute;
+    bottom: 5;
   }
   .btnOrder {
     padding: 5px;
