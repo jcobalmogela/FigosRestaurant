@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@media (min-width: 320px) {
+  .header-component {
+    height: 85vh;
+    width: 100%;
+    background-color: #1d1d1d;
+    position: relative;
+    z-index: -2;
+  }
+  .header-con {
+    width: 100%;
+    border: 1px solid red;
+    height: 300px;
+    padding: 15px;
+  }
+  .header-con h1 {
+    width: 60%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-con h1 span {
+    color: #f90413;
+    font-family: "Poppins", sans-serif;
+  }
+  .header-con p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    width: 60%;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+  .headerbtn-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 270.5px;
+  }
+  .headerbtn-con p {
+    color: #ffb902;
+    font-family: "Poppins", sans-serif;
+  }
+  .btnOrder {
+    padding: 5px;
+    height: 40px;
+    border: none;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #e4283f;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .btnheader {
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=headerContent.css.map */

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins', sans-serif;
+
+*{
+    // border:1px solid red
+}
+@media(min-width:320px){
+    .header-component{
+        height: 85vh;
+        width: 100%;
+        background-color: #1d1d1d;
+        position: relative;
+        z-index: -2;
+    }
+    .header-con{
+    width: 100%;
+    border:1px solid red;
+    height: 300px;
+    padding: 15px;
+ 
+    }
+    .header-con h1 {
+        width: 60%;
+        color: white;
+        font-family: $mainfont;
+    }
+    .header-con h1 span{
+        color:$primaryColor;
+        font-family: $mainfont;
+    }
+    .header-con p {
+        color: white;
+        font-family: $mainfont;
+        width: 60%;
+        font-size: 15px;
+        opacity: 0.8;
+    }
+    .headerbtn-con{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 270.5px;
+    }
+    .headerbtn-con p{
+        color: $secondaryColor;
+        font-family: $mainfont;
+    }
+
+    .btnOrder{
+        padding: 5px;
+        height: 40px;
+        border:none;
+        width: 100px;
+        border-radius: 50px;
+        background-color: #e4283f;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 0.5px;
+    }
+    .btnheader{
+        margin-top: 15px;
+    }
+
+}
+@media(min-width:768px){
+    
+}
+@media(min-width:800px){
+    
+}
+@media(min-width:1100px){
+    
+}
