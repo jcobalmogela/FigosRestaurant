@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@media (min-width: 320px) {
+  .menuA-container {
+    width: 100%;
+    height: auto;
+    background-color: #ffb902;
+    padding: 15px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .menuA {
+    width: 100%;
+    height: 150px;
+    background-color: #1d1d1d;
+    position: relative;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuA h1 {
+    font-size: 10pt;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    position: relative;
+    left: 5%;
+  }
+  .menuA .price {
+    position: relative;
+    color: #f90413;
+    font-family: "Poppins", sans-serif;
+    font-size: 13pt;
+  }
+  .circleMenu {
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+    margin-left: -8px;
+    background-color: white;
+  }
+  .orderBtn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4ac188;
+    width: 120px;
+    border-radius: 8px;
+  }
+  .Mone .circleMenu {
+    background-image: url("../img/menuMobile/menu1.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .Mtwo .circleMenu {
+    background-image: url("../img/menuMobile/menu2.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .Mthree .circleMenu {
+    background-image: url("../img/menuMobile/menu3.png");
+    background-position: center;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=menoComponent.css.map */

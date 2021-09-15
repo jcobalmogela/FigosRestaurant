@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins',sans-serif;
+
+
+
+@media(min-width:320px){
+    .menuA-container{
+        width: 100%;
+        height: auto;
+        background-color: $secondaryColor;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows:  auto;
+        grid-gap: 10px;
+        
+    }
+    .menuA{
+        width: 100%;
+        height: 150px;
+      background-color: #1d1d1d;
+        position: relative;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     
+    }
+    .menuA h1 {
+        font-size: 10pt;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+        font-weight: 400;
+        position: relative;
+        left: 5%;
+    }
+    .menuA .price{
+        position: relative;
+        color: $primaryColor;
+        font-family: $mainfont;
+        font-size: 13pt;
+     
+    }
+    .circleMenu{
+        width: 70px;
+        height: 70px;
+        border:3px solid white;
+        border-radius: 50%;
+        position:absolute;
+        top: 0;
+        left: 0;
+        margin-top:-5px;
+       margin-left: -8px;
+       background-color: white;
+    }
+    .orderBtn{
+        margin-top: 10px;
+        padding: 10px;
+        background-color: $optionalColor;
+        width: 120px;
+        border-radius: 8px;
+      
+    }
+    .Mone .circleMenu{
+        background-image: url('../img/menuMobile/menu1.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mtwo .circleMenu{
+        background-image: url('../img/menuMobile/menu2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .Mthree .circleMenu{
+        background-image: url('../img/menuMobile/menu3.png');
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media(min-width:480px){
+}
+@media(min-width:768px){
+}
+@media(min-width:800px){
+}
+@media(min-width:992px){
+}
+@media(min-width:1200px){
+}
