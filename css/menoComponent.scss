@@ -5,13 +5,11 @@ $secondaryColor:#ffb902;
 $optionalColor:#4ac188;
 $mainfont:'Poppins',sans-serif;
 
-
-
 @media(min-width:320px){
     .menuA-container{
         width: 100%;
         height: auto;
-        background-color: $secondaryColor;
+        background-color: #101010;
         padding: 15px;
         display: grid;
         grid-template-columns: auto ;
@@ -60,6 +58,16 @@ $mainfont:'Poppins',sans-serif;
         margin-top:-5px;
        margin-left: -8px;
        background-color: white;
+       animation: rotate 30s ease-in-out infinite;
+    }
+
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
     }
     .orderBtn{
         margin-top: 10px;
