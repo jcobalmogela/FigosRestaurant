@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  border: 1px solid red;
+}
+
 @media (min-width: 320px) {
+  .featuredMenu {
+    width: 300px;
+    height: auto;
+  }
   .header-component {
-    height: 85vh;
+    height: auto;
     width: 100%;
     background-color: #1d1d1d;
     position: relative;
@@ -9,11 +17,26 @@
   }
   .header-con {
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding: 20px;
   }
+  .header-con:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .header-con h1 {
-    width: 65%;
+    width: 75%;
     color: white;
     font-family: "Poppins", sans-serif;
   }
@@ -24,7 +47,7 @@
   .header-con p {
     color: white;
     font-family: "Poppins", sans-serif;
-    width: 65%;
+    width: 75%;
     font-size: 15px;
     opacity: 0.8;
   }
@@ -40,6 +63,7 @@
             justify-content: space-evenly;
     width: 270.5px;
     position: relative;
+    margin-top: 10px;
   }
   .headerbtn-con p {
     color: #ffb902;
@@ -67,6 +91,50 @@
   }
   .btnheader {
     margin-top: 15px;
+  }
+}
+
+@media (min-width: 480px) {
+  .featuredMenu {
+    width: 380px;
+  }
+  .header-con {
+    padding: 30px;
+    height: auto;
+  }
+  .header-con h1 {
+    width: 65%;
+    font-size: 30pt;
+  }
+  .header-con p {
+    font-size: 15pt;
+  }
+  .btnOrder {
+    width: 150px;
+    height: 50px;
+  }
+  .headerbtn-con p::before {
+    content: '';
+    width: 94px;
+    background-color: #ffb902;
+    height: 2px;
+    position: absolute;
+    bottom: 5;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-con {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-component {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
   }
 }
 /*# sourceMappingURL=headerContent.css.map */

@@ -6,11 +6,16 @@ $optionalColor:#4ac188;
 $mainfont:'Poppins', sans-serif;
 
 *{
-    // border:1px solid red
+    border:1px solid red;
 }
+// smaller phone view points
 @media(min-width:320px){
+    .featuredMenu{
+        width: 300px;
+        height: auto;
+    }
     .header-component{
-        height: 85vh;
+        height: auto;
         width: 100%;
         background-color: #1d1d1d;
         position: relative;
@@ -18,13 +23,17 @@ $mainfont:'Poppins', sans-serif;
     }
     .header-con{
     width: 100%;
-    height: 300px;
+    height: 350px;
     padding: 20px;
-
- 
+    }
+    .header-con:nth-child(2){
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .header-con h1 {
-        width: 65%;
+        width: 75%;
         color: white;
         font-family: $mainfont;
     }
@@ -35,7 +44,7 @@ $mainfont:'Poppins', sans-serif;
     .header-con p {
         color: white;
         font-family: $mainfont;
-        width: 65%;
+        width: 75%;
         font-size: 15px;
         opacity: 0.8;
     }
@@ -45,6 +54,7 @@ $mainfont:'Poppins', sans-serif;
         justify-content: space-evenly;
         width: 270.5px;
         position: relative;
+        margin-top: 10px;
     }
     .headerbtn-con p{
         color: $secondaryColor;
@@ -77,12 +87,49 @@ $mainfont:'Poppins', sans-serif;
     }
 
 }
+// small device and most phones
+@media(min-width:480px){
+    .featuredMenu{
+        width: 380px;
+    }
+    .header-con{
+        padding: 30px;
+        height: auto;
+    }
+    .header-con h1 {
+        width: 65%;
+        font-size: 30pt;
+    }
+    .header-con p {
+        font-size: 15pt;
+    }
+    .btnOrder{
+        width: 150px;
+        height: 50px;
+    }
+    .headerbtn-con p::before{
+        content: '';
+        width: 94px;
+        background-color: $secondaryColor;
+        height: 2px;
+        position: absolute;
+        bottom: 5;
+    }
+}
+// most tablets
 @media(min-width:768px){
-    
+    .header-con{
+        padding: 40px;
+    }
 }
-@media(min-width:800px){
-    
+//smaller desktop
+@media(min-width:992px){
+    .header-component{
+        display: grid;
+        grid-template-columns: (auto auto);
+    }
 }
-@media(min-width:1100px){
+//large device and wide screen
+@media(min-width:1200px){
     
 }
