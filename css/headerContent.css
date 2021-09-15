@@ -30,11 +30,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 !important;
   }
   .header-con h1 {
     width: 75%;
     color: white;
     font-family: "Poppins", sans-serif;
+    font-size: 23pt;
   }
   .header-con h1 span {
     color: #f90413;
@@ -91,6 +93,9 @@
 }
 
 @media (min-width: 480px) {
+  .header-component {
+    height: auto;
+  }
   .featuredMenu {
     width: 380px;
   }
@@ -120,6 +125,9 @@
 }
 
 @media (min-width: 768px) {
+  .header-component {
+    height: auto;
+  }
   .header-con {
     padding: 40px;
   }
@@ -131,6 +139,38 @@
     display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
+    height: 87vh;
+  }
+  .featuredMenu {
+    width: 100%;
+    position: relative;
+    right: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-component {
+    height: 87vh;
+  }
+  .featuredMenu {
+    width: 100%;
+    position: relative;
+    right: 50%;
+  }
+  .header-con {
+    width: 100%;
+  }
+  .header-con h1 {
+    width: 50%;
+    margin-left: 20px;
+    font-size: 3.5rem;
+  }
+  .header-con p {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .headerbtn-con {
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=headerContent.css.map */

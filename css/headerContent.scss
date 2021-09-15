@@ -13,6 +13,7 @@ $mainfont:'Poppins', sans-serif;
     .featuredMenu{
         width: 300px;
         height: auto;
+      
     }
     .header-component{
         height: auto;
@@ -31,11 +32,13 @@ $mainfont:'Poppins', sans-serif;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0!important;
     }
     .header-con h1 {
         width: 75%;
         color: white;
         font-family: $mainfont;
+        font-size: 23pt;
     }
     .header-con h1 span{
         color:$primaryColor;
@@ -89,6 +92,9 @@ $mainfont:'Poppins', sans-serif;
 }
 // small device and most phones
 @media(min-width:480px){
+    .header-component{
+        height: auto;
+    }
     .featuredMenu{
         width: 380px;
     }
@@ -118,6 +124,9 @@ $mainfont:'Poppins', sans-serif;
 }
 // most tablets
 @media(min-width:768px){
+   .header-component{
+       height: auto;
+   }
     .header-con{
         padding: 40px;
     }
@@ -127,9 +136,39 @@ $mainfont:'Poppins', sans-serif;
     .header-component{
         display: grid;
         grid-template-columns: (auto auto);
+        height: 87vh;
+    }
+    .featuredMenu{
+        width: 100%;
+        position: relative;
+        right: 30%;
     }
 }
 //large device and wide screen
 @media(min-width:1200px){
-    
+    .header-component{
+       height: 87vh;
+    }
+    .featuredMenu{
+        width: 100%;
+        position: relative;
+        right: 50%;
+    }
+    .header-con{
+       width: 100%;
+   }
+    .header-con:nth-child(1){
+    }
+    .header-con h1{
+        width: 50%;
+        margin-left: 20px;
+        font-size: 3.5rem;
+    }
+    .header-con p {
+        width: 50%;
+        margin-left: 20px;
+    }
+    .headerbtn-con{
+        margin-left: 20px;
+    }
 }
