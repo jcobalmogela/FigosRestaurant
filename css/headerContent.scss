@@ -3,68 +3,83 @@
 $primaryColor:#f90413;
 $secondaryColor:#ffb902;
 $optionalColor:#4ac188;
-$mainfont:'Poppins', sans-serif;
+$mainfont:'Poppins',
+sans-serif;
 
-*{
-    // border:1px solid red;
+* {
+    // border: 1px solid red;
 }
+
 // smaller phone view points
-@media(min-width:320px){
-    .featuredMenu{
+@media(min-width:320px) {
+    .featuredMenu {
         width: 300px;
         height: auto;
-      
+
     }
-    .header-component{
+
+    .header-component {
         height: auto;
         width: 100%;
         background-color: #1d1d1d;
         position: relative;
         z-index: -2;
     }
-    .header-con{
-    width: 100%;
-    height: 350px;
-    padding: 20px;
+
+    .header-con {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
     }
-    .header-con:nth-child(2){
-        display:flex;
+
+    .header-con:nth-child(2) {
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0!important;
+        padding: 0 !important;
     }
+
     .header-con h1 {
-        width: 75%;
+        width: 100%;
         color: white;
         font-family: $mainfont;
-        font-size: 23pt;
+        font-size: 25pt;
+        margin-top: 20px;
     }
-    .header-con h1 span{
-        color:$primaryColor;
+
+    .header-con h1 span {
+        color: $primaryColor;
         font-family: $mainfont;
     }
+
+    .btnheader {
+        font-size: 12pt;
+    }
+
     .header-con p {
         color: white;
         font-family: $mainfont;
-        width: 75%;
-        font-size: 15px;
+
+        font-size: 12pt;
         opacity: 0.8;
     }
-    .headerbtn-con{
+
+    .headerbtn-con {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        width: 270.5px;
+        justify-content: flex start;
+        width: 100%;
         position: relative;
         margin-top: 10px;
     }
-    .headerbtn-con p{
+
+    .headerbtn-con p {
         color: $secondaryColor;
         font-family: $mainfont;
- 
     }
-    .headerbtn-con p::before{
+
+    .headerbtn-con p::before {
         content: '';
         width: 70px;
         background-color: $secondaryColor;
@@ -73,10 +88,10 @@ $mainfont:'Poppins', sans-serif;
         bottom: 5;
     }
 
-    .btnOrder{
+    .btnOrder {
         padding: 5px;
         height: 40px;
-        border:none;
+        border: none;
         width: 100px;
         border-radius: 50px;
         background-color: #e4283f;
@@ -85,35 +100,44 @@ $mainfont:'Poppins', sans-serif;
         letter-spacing: 0.5px;
         margin-right: 15px;
     }
-    .btnheader{
+
+    .btnheader {
         margin-top: 15px;
     }
 
 }
+
 // small device and most phones
-@media(min-width:480px){
-    .header-component{
+@media(min-width:480px) {
+    .header-component {
         height: auto;
     }
-    .featuredMenu{
+
+    .featuredMenu {
         width: 380px;
     }
-    .header-con{
+
+    .header-con {
         padding: 30px;
         height: auto;
     }
+
     .header-con h1 {
-        width: 65%;
+        width: 100%;
         font-size: 30pt;
+        padding-right: 50px;
     }
+
     .header-con p {
         font-size: 15pt;
     }
-    .btnOrder{
+
+    .btnOrder {
         width: 150px;
         height: 50px;
     }
-    .headerbtn-con p::before{
+
+    .headerbtn-con p::before {
         content: '';
         width: 94px;
         background-color: $secondaryColor;
@@ -122,53 +146,68 @@ $mainfont:'Poppins', sans-serif;
         bottom: 5;
     }
 }
+
 // most tablets
-@media(min-width:768px){
-   .header-component{
-       height: auto;
-   }
-    .header-con{
+@media(min-width:768px) {
+    .header-component {
+        height: auto;
+    }
+
+    .header-con {
         padding: 40px;
     }
 }
 //smaller desktop
-@media(min-width:992px){
-    .header-component{
+@media(min-width:992px) {
+    .header-component {
         display: grid;
         grid-template-columns: (auto auto);
         height: 87vh;
     }
-    .featuredMenu{
+
+    .featuredMenu {
         width: 100%;
         position: relative;
-        right: 30%;
+        right: 20%;
+    }
+
+    .header-con h1 {
+        margin-top: 50px;
     }
 }
+
 //large device and wide screen
-@media(min-width:1200px){
-    .header-component{
-       height: 87vh;
+@media(min-width:1200px) {
+    .header-component {
+        height: 86.8vh;
     }
-    .featuredMenu{
+
+    .featuredMenu {
         width: 100%;
         position: relative;
         right: 50%;
     }
-    .header-con{
-       width: 100%;
-   }
-    .header-con:nth-child(1){
+
+    .header-con {
+        width: 100%;
     }
-    .header-con h1{
-        width: 50%;
+
+    .header-con:nth-child(1) {}
+
+    .header-con h1 {
+        width: 70%;
         margin-left: 20px;
         font-size: 3.5rem;
+        margin-top: 50px;
     }
+
     .header-con p {
         width: 50%;
         margin-left: 20px;
     }
-    .headerbtn-con{
+
+    .headerbtn-con {
         margin-left: 20px;
+        width: 350px;
     }
 }

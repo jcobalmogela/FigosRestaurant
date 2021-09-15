@@ -33,20 +33,23 @@
     padding: 0 !important;
   }
   .header-con h1 {
-    width: 75%;
+    width: 100%;
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 23pt;
+    font-size: 25pt;
+    margin-top: 20px;
   }
   .header-con h1 span {
     color: #f90413;
     font-family: "Poppins", sans-serif;
   }
+  .btnheader {
+    font-size: 12pt;
+  }
   .header-con p {
     color: white;
     font-family: "Poppins", sans-serif;
-    width: 75%;
-    font-size: 15px;
+    font-size: 12pt;
     opacity: 0.8;
   }
   .headerbtn-con {
@@ -56,10 +59,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 270.5px;
+    -webkit-box-pack: flex start;
+        -ms-flex-pack: flex start;
+            justify-content: flex start;
+    width: 100%;
     position: relative;
     margin-top: 10px;
   }
@@ -104,8 +107,9 @@
     height: auto;
   }
   .header-con h1 {
-    width: 65%;
+    width: 100%;
     font-size: 30pt;
+    padding-right: 50px;
   }
   .header-con p {
     font-size: 15pt;
@@ -144,13 +148,16 @@
   .featuredMenu {
     width: 100%;
     position: relative;
-    right: 30%;
+    right: 20%;
+  }
+  .header-con h1 {
+    margin-top: 50px;
   }
 }
 
 @media (min-width: 1200px) {
   .header-component {
-    height: 87vh;
+    height: 86.8vh;
   }
   .featuredMenu {
     width: 100%;
@@ -161,9 +168,10 @@
     width: 100%;
   }
   .header-con h1 {
-    width: 50%;
+    width: 70%;
     margin-left: 20px;
     font-size: 3.5rem;
+    margin-top: 50px;
   }
   .header-con p {
     width: 50%;
@@ -171,6 +179,7 @@
   }
   .headerbtn-con {
     margin-left: 20px;
+    width: 350px;
   }
 }
 /*# sourceMappingURL=headerContent.css.map */
