@@ -25,6 +25,8 @@ $mainfont:'Poppins', sans-serif;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid $primaryColor;
+    position: sticky;
+    top: 0;
    
 }
 
@@ -130,7 +132,88 @@ $mainfont:'Poppins', sans-serif;
 
 }
 
+@media(max-width:319px){
+    .nav {
+        justify-content: space-between;
+        padding: 20px;
+        border:1px solid $mainfont
+    }
 
+    .logo {
+        width: 100px;
+        height: 70px;
+    }
+
+    .menu {}
+
+    .nav-header {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #1d1d1d;
+        width: 100%;
+        z-index: -1;
+        height: 100vh;
+        padding: 0px;
+        text-align: center;
+        transition: all ease-in-out 0.5s;
+        border-bottom:3px solid $primaryColor;
+    }
+    .hide{
+        opacity: 0;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        position: relative;
+        top: 30%;
+        font-size: 12pt;
+    }
+    .nav-user{
+        display: none;
+    }
+    .nav-links:nth-child(5),.nav-links:nth-child(6){
+        display: block;
+    }
+
+    .fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    .fadeOut{
+        animation: fadeOut 0.5s ease-in-out;
+    }
+    .fadedMid{
+        opacity: 0;
+    }
+    .fadedTop{
+        transform:rotate(-140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+    .fadedBot{
+        transform: rotate(140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+}
 
 @media (min-width:320px) {
     .nav {
@@ -159,7 +242,6 @@ $mainfont:'Poppins', sans-serif;
         text-align: center;
         transition: all ease-in-out 0.5s;
         border-bottom:3px solid $primaryColor;
-        
     }
     .hide{
         opacity: 0;

@@ -7,14 +7,109 @@ $mainfont:'Poppins',
 sans-serif;
 
 * {
-    // border: 1px solid red;
+   
 }
+@media(max-width:319px){
+    .featuredMenu {
+        width: 250px;
+        height: auto;
 
+    }
+
+    .header-component {
+        height: auto;
+        width: 100%;
+        background-color: #1d1d1d;
+        position: relative;
+        z-index: -2;
+    }
+
+    .header-con {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+    }
+
+    .header-con:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .header-con h1 {
+        width: 100%;
+        color: white;
+        font-family: $mainfont;
+        font-size: 25pt;
+        margin-top: 20px;
+    }
+
+    .header-con h1 span {
+        color: $primaryColor;
+        font-family: $mainfont;
+    }
+
+    .btnheader {
+        font-size: 12pt;
+    }
+
+    .header-con p {
+        color: white;
+        font-family: $mainfont;
+
+        font-size: 12pt;
+        opacity: 0.8;
+    }
+
+    .headerbtn-con {
+        display: flex;
+        align-items: center;
+        justify-content: flex start;
+        width: 100%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .headerbtn-con p {
+        color: $secondaryColor;
+        font-family: $mainfont;
+    }
+
+    .headerbtn-con p::before {
+        content: '';
+        width: 70px;
+        background-color: $secondaryColor;
+        height: 2px;
+        position: absolute;
+        bottom: 5;
+    }
+
+    .btnOrder {
+        padding: 5px;
+        height: 40px;
+        border: none;
+        width: 100px;
+        border-radius: 50px;
+        background-color: #e4283f;
+        color: white;
+        font-family: $mainfont;
+        letter-spacing: 0.5px;
+        margin-right: 15px;
+    }
+
+    .btnheader {
+        margin-top: 15px;
+    }
+}
 // smaller phone view points
 @media(min-width:320px) {
+
     .featuredMenu {
-        width: 300px;
+        width: 250px;
         height: auto;
+        padding: 20px;
 
     }
 
@@ -106,7 +201,6 @@ sans-serif;
     }
 
 }
-
 // small device and most phones
 @media(min-width:480px) {
     .header-component {
@@ -114,7 +208,8 @@ sans-serif;
     }
 
     .featuredMenu {
-        width: 380px;
+        width: 300px;
+        height: auto;
     }
 
     .header-con {
@@ -146,7 +241,6 @@ sans-serif;
         bottom: 5;
     }
 }
-
 // most tablets
 @media(min-width:768px) {
     .header-component {
@@ -185,7 +279,7 @@ sans-serif;
     .featuredMenu{
         width: 100%;
         position: relative;
-        right: 50%;
+        right: 40%;
         
     }
     .header-con {
