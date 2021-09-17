@@ -17,6 +17,8 @@ $mainfont:'Poppins',sans-serif;
         grid-template-columns: auto ;
         grid-template-rows:  auto;
         grid-gap: 10px;
+        position: relative;
+        z-index: -2;
         
     }
     .menuA{
@@ -32,6 +34,11 @@ $mainfont:'Poppins',sans-serif;
         align-items: center;
         flex-direction: column;
      
+    }
+    .menuA:nth-child(1){
+        background: none;
+        height: auto;
+        color: $secondaryColor!important;
     }
     .menuA h1 {
         font-size: 10pt;
@@ -94,6 +101,9 @@ $mainfont:'Poppins',sans-serif;
         background-position: center;
         background-size: cover;
     }
+    .hideMenu{
+        display: none;
+    }
 }
 
 @media(min-width:320px){
@@ -115,6 +125,7 @@ $mainfont:'Poppins',sans-serif;
         grid-template-rows:  auto;
         grid-gap: 10px;
         position: relative;
+        z-index: -2;
         
     }
     .menuA{
@@ -129,6 +140,7 @@ $mainfont:'Poppins',sans-serif;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        z-index: -2;
     }
     .menuA:hover{
         background: $secondaryColor;
