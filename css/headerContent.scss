@@ -7,7 +7,7 @@ $mainfont:'Poppins',
 sans-serif;
 
 * {
-   
+//    border:1px solid red;
 }
 @media(max-width:319px){
     .featuredMenu {
@@ -105,12 +105,9 @@ sans-serif;
 }
 // smaller phone view points
 @media(min-width:320px) {
-
     .featuredMenu {
         width: 250px;
         height: auto;
-        padding: 20px;
-
     }
 
     .header-component {

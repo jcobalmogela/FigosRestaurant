@@ -263,60 +263,7 @@
   }
 }
 
-@media (min-width: 480px) {
-  .Mone .circleMenu {
-    background-image: url("../img/menuMobile/menu1.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mtwo .circleMenu {
-    background-image: url("../img/menuMobile/menu2.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mthree .circleMenu {
-    background-image: url("../img/menuMobile/menu3.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mfour .circleMenu {
-    background-image: url("../img/menuMobile/menu4.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mfive .circleMenu {
-    background-image: url("../img/menuMobile/Menu5.png");
-    background-position: center;
-    background-size: cover;
-  }
-}
-
 @media (min-width: 768px) {
-  .Mone .circleMenu {
-    background-image: url("../img/menuMobile/menu1.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mtwo .circleMenu {
-    background-image: url("../img/menuMobile/menu2.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mthree .circleMenu {
-    background-image: url("../img/menuMobile/menu3.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mfour .circleMenu {
-    background-image: url("../img/menuMobile/menu4.png");
-    background-position: center;
-    background-size: cover;
-  }
-  .Mfive .circleMenu {
-    background-image: url("../img/menuMobile/Menu5.png");
-    background-position: center;
-    background-size: cover;
-  }
   .menuA-container {
     width: 100%;
     height: auto;

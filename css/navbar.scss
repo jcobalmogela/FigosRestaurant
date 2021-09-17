@@ -5,17 +5,11 @@ $secondaryColor:#ffb902;
 $optionalColor:#4ac188;
 $mainfont:'Poppins', sans-serif;
 
-
-
-
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
 }
-
 .nav {
     height: 15vh;
     width: 100%;
@@ -29,12 +23,10 @@ $mainfont:'Poppins', sans-serif;
     top: 0;
    
 }
-
 .logO {
     width: 150px;
     height: 100px;
 }
-
 .nav-header ,.nav-user{
     display: flex;
     justify-content: center;
@@ -43,7 +35,10 @@ $mainfont:'Poppins', sans-serif;
     transition: none;
     position: relative;
 }
-
+.nav-header a {
+    text-decoration: none;
+    cursor: pointer;
+}
 .nav-links {
     color: white;
     list-style: none;
@@ -51,12 +46,10 @@ $mainfont:'Poppins', sans-serif;
     font-size: 20px;
     font-family:$mainfont;
     letter-spacing: 1px;
-
 }
 .active-nav-links{
     // border-bottom:2px solid $primaryColor; 
 }
-
 .menu {
     width: 45px;
     height: 40px;
@@ -70,7 +63,6 @@ $mainfont:'Poppins', sans-serif;
     flex-direction: column;
 
 }
-
 .burger {
     width: 25px;
     border: 1px solid white;
@@ -79,8 +71,6 @@ $mainfont:'Poppins', sans-serif;
     background: white;
     transition: all ease-in-out 0.5s;
 }
-
-
 .shop-icon{
     width: 50px;
     height: 50px;
@@ -109,9 +99,9 @@ $mainfont:'Poppins', sans-serif;
     font-size: 10px;
 }
 .btnSign{
-   padding: 5px;
+   padding-top: 11px;
+   padding-bottom: 11px;
    width:100px;
-   height: 50px;
    margin-left: 10px;
    background: none;
    border: none;
@@ -120,18 +110,19 @@ $mainfont:'Poppins', sans-serif;
    font-family: $mainfont;
    border-radius: 8px;
    transition: ease-in-out 0.5s;
+   text-align: center;
 }
 .btnSign:hover{
     letter-spacing: 1px;
 }
 .btnSign:nth-child(3){
     background: $optionalColor;
+    
 }
 .btnSign:nth-child(2){
     background: $primaryColor;
 
 }
-
 @media(max-width:319px){
     .nav {
         justify-content: space-between;
@@ -214,7 +205,6 @@ $mainfont:'Poppins', sans-serif;
         }
     }
 }
-
 @media (min-width:320px) {
     .nav {
         justify-content: space-between;
@@ -319,7 +309,6 @@ $mainfont:'Poppins', sans-serif;
         height: 100px;
     }
 }
-
 @media(min-width:1100px) {
     .logo{
         width: 150px;
