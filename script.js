@@ -16,7 +16,12 @@ menuIcon.addEventListener('click', () => {
         burgerMenu[2].classList.add('fadedBot');
 
     }else if (menu.classList.contains('fadeIn')){
-      
+        menu.classList.remove('fadeIn');
+        menu.classList.add('hide');
+        menu.classList.add('fadeOut');
+        burgerMenu[1].classList.remove('fadedMid');
+        burgerMenu[0].classList.remove('fadedTop');
+        burgerMenu[2].classList.remove('fadedBot');
       
     }
 })
@@ -31,6 +36,6 @@ navLinks.forEach(links => {
     })
 });
 
-btnSign[0].addEventListener('click', ()=> {
+// btnSign[0].addEventListener('click', ()=> {
     
-})
+// })
