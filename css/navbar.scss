@@ -43,7 +43,7 @@ $mainfont:'Poppins', sans-serif;
     color: white;
     list-style: none;
     padding: 5px;
-    font-size: 20px;
+    font-size: 16px;
     font-family:$mainfont;
     letter-spacing: 1px;
 }
@@ -308,8 +308,14 @@ $mainfont:'Poppins', sans-serif;
         width: 130px;
         height: 100px;
     }
+    .btnSign{
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
-@media(min-width:1100px) {
+@media(min-width:1200px) {
     .logo{
         width: 150px;
         height: 100px;
@@ -329,8 +335,6 @@ $mainfont:'Poppins', sans-serif;
         justify-content: center;
         align-items: center;
         border:none;
-
-
     }
 
     .menu {
@@ -352,5 +356,14 @@ $mainfont:'Poppins', sans-serif;
     }
     .nav-links:nth-child(5), .nav-links:nth-child(6){
         display: none;
+    }
+    .btnSign{
+        font-size: 13px;
+        letter-spacing: 1px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .shop-icon{
+        font-size: 14px;
     }
 }

@@ -1,0 +1,183 @@
+$primaryColor:#f90413;
+$secondaryColor:#ffb902;
+$optionalColor:#4ac188;
+$mainfont:'Poppins',
+sans-serif;
+$dfont:11pt;
+$tfont:10pt;
+$mfont:9pt;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer img{
+    width: 400px;
+    height: 400px;
+}
+.formContainer{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  
+}
+.formContainer form{
+ padding: 200px;
+ width: 100%;
+ border:1px solid $primaryColor;
+ border-radius: 5px;
+ 
+}
+.formContainer img{
+     width: 150px;
+     height: 100px;
+     position: absolute;
+     right: 0;
+     top: 20%;
+   
+}
+.formContainer form label{
+    font-size: $dfont;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+   
+}
+input[type=text],input[type=password]{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.btnLogCon{
+    width: 100%;
+    text-align: left;
+}
+.btnLogCon button{
+    padding: 10px;
+    width: 80px;
+    background-color: $primaryColor;
+    border: none;
+    color: white;
+    font-family: $mainfont;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 5px; 
+}
+.btnLogCon p {
+    font-size: $dfont;
+    text-transform: uppercase;
+    padding: 20px;
+    opacity: 0.8;
+}
+.sociaLogin{
+    text-align: center
+}
+.sociaLogin .email,.sociaLogin .facebook{
+    width: 300px;
+}
+.facebook{
+    background: #3b5998!important;
+}
+.sociaLogin p {
+    font-size: 9pt;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+@media(min-width:320px){
+    .login-container{
+        display: block;
+        height: auto;
+    }
+    .container{
+        height: auto;
+    }
+  
+    .imgContainer{
+        height: auto;
+    }
+    .imgContainer img{
+        width: 200px;
+        height: 200px;
+    }
+    .formContainer form{
+        padding: 20px;
+    }
+    .formContainer img{
+        height: 60px;
+        width: 90px;
+        right: 0;
+        top: 0;
+      
+   }
+   .sociaLogin .email,.sociaLogin .facebook{
+    width: 100%;
+}
+}
+
+
+@media(min-width:1200px){
+    .login-container{
+        width: 100%;
+        height: 100vh;
+        background-color: #1d1d1d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+        height: 500px;
+    }
+    .imgContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgContainer img{
+        width: 400px;
+        height: 400px;
+    }
+    .formContainer img{
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+   }
+   .formContainer form{
+    padding: 50px;
+}
+.sociaLogin .email,.sociaLogin .facebook{
+    width: 300px;
+}
+  
+}
+
