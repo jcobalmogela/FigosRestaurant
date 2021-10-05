@@ -10,6 +10,9 @@ $mainfont:'Poppins', sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
+.noness{
+    display: none!important;
+}
 .nav {
     height: 15vh;
     width: 100%;
@@ -366,4 +369,5 @@ $mainfont:'Poppins', sans-serif;
     .shop-icon{
         font-size: 14px;
     }
+   
 }

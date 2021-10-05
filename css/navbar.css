@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+.noness {
+  display: none !important;
+}
+
 .nav {
   height: 15vh;
   width: 100%;
